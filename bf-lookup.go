@@ -68,7 +68,7 @@ func lookupDomain(domain string) *[]string {
 		time.Second * 10,
 	)
 	if err != nil {
-		panic(err)
+		return nil
 	}
 
 	// Send a query for the root domain
