@@ -140,7 +140,7 @@ func main() {
 		for j := 0; j < 8; j++ {
 
 			// First bit it always 0 in ASCII and third bit is case which is irrelevant in DNS, skip them
-			if j == 0 || j == 2 {
+			if j == 7 || j == 5 {
 				continue
 			}
 
