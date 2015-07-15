@@ -76,7 +76,7 @@ func lookupDomain(domain string) *[]string {
 	var buffer []byte
 	buffer, err = ioutil.ReadAll(conn)
 	if err != nil {
-		panic(err)
+		return nil
 	}
 
 	// Cleanup
